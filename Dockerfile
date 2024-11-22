@@ -1,4 +1,4 @@
-FROM nodejs:16-alpine
+FROM node:16-alpine
 
 WORKDIR /usr/src/app
 COPY package.json .
