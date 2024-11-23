@@ -6,6 +6,9 @@ on:
 jobs:
   deploy:
     runs-on: self-hosted
+    strategy:
+      matrix:
+        runner: [worker1, worker2]
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
