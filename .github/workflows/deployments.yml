@@ -22,10 +22,11 @@ jobs:
         run: |
           docker pull imanyauma/ntx-devops-test:latest
       - name: Clean Up Docker Container
-        if: always()
         run: |
-          docker stop ntx-devops-test
-          docker rm ntx-devops-test
+          if [ "$(docker ps -aq -f name=ntx-devops-test)" ]; then
+            docker stop ntx-devops-test
+            docker rm ntx-devops-test
+          fi
       - name: Run Docker Container
         run: |
           docker run --name ntx-devops-test -d -p 3000:3000 imanyauma/ntx-devops-test:latest
