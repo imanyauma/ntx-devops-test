@@ -109,10 +109,10 @@ This is a Node.js application runs with Docker. To check application running, fo
    docker ps -a | grep ntx-devops-test
    ```
 3. If container status is running, verify the application in browser using Nginx IP, refresh several times to check Load Balancing is working by routing request to different hosts (container id).
-Host Container 1
-![Container Host 1](/images/host-1-container.png)
-Host Container 2
-![Container Host 2](/images/host-2-container.png)
+   * Host Container 1
+     ![Container Host 1](/images/host-1-container.png)
+   * Host Container 2
+     ![Container Host 2](/images/host-2-container.png)
 
 ---
 
