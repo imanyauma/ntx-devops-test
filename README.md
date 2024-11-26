@@ -65,11 +65,11 @@ To implement this solution, the following technology use:
    * Adjust provision_nginx script under **upstream backend_servers** section to
 4. Provision the server with run this command
    ```bash
-  vagrant provision
+   vagrant provision
    ```
 5. Check server status and make sure machine states are running
    ```bash
-  vagrant status
+   vagrant status
    ```
    ![Vagrant Status](/images/vagrant-status.png)
 6. Run **vagrant ssh** following by name the server created
@@ -113,7 +113,7 @@ This is a Node.js application runs with Docker. To check application running, fo
 
      ![Container Host 1](/images/host-1-container.png)
    * Host Container 2
-   
+
      ![Container Host 2](/images/host-2-container.png)
 
 ---
